@@ -1,0 +1,43 @@
+<html>
+<head>
+<title></title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.sw-transition.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+	$('#class_based').swTransition({
+		'method' : 'class',
+		'container_width' : 1100
+	});
+});
+</script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div id="container">
+	<div id="class_based">
+		<img src="http://placehold.it/200x100" style="left: 0px; position: absolute; top: 0px" class="transition effect-slideRight delay-0 speed-1" />
+		<div class="caption" style="left: 0px; position: absolute; top: 110px">Slide Right</div>
+		<img src="http://placehold.it/200x100" style="left: 220px; position: absolute; top: 0px" class="transition effect-fadeIn delay-0 speed-1" />
+		<div class="caption" style="left: 220px; position: absolute; top: 110px">Fade In</div>
+		<img src="http://placehold.it/200x100" style="left: 440px; position: absolute; top: 0px" class="transition effect-zoomIn delay-0 speed-1" />
+		<div class="caption" style="left: 440px; position: absolute; top: 110px">Zoom In</div>
+		<img src="http://placehold.it/200x100" style="left: 660px; position: absolute; top: 0px" class="effect-slideDown speed-1 delay-1 transition" />
+		<div class="caption" style="left: 660px; position: absolute; top: 110px">Slide Down</div>
+		<img src="http://placehold.it/200x100" style="left: 880px; position: absolute; top: 0px" class="transition effect-slideLeft delay-0 speed-1" />
+		<div class="caption" style="left: 880px; position: absolute; top: 110px">Slide Left</div>
+		<img src="http://placehold.it/200x100" style="left: 0px; position: absolute; top: 140px;" class="transition effect-fadeInOut delay-0 speed-1 hold-3" />
+		<div class="caption" style="left: 0px; position: absolute; top: 250px">Fade In & Out<div>hold 3 seconds</div></div>
+		<img src="http://placehold.it/200x100" style="left: 220px; position: absolute; top: 140px;" class="transition effect-fadeInOutTo delay-0 speed-1 hold-3 alpha-3" />
+		<div class="caption" style="left: 220px; position: absolute; top: 250px">Fade In & Out To<div>hold 3 seconds, fade to 30%</div></div>
+		<!--
+<img src="http://placehold.it/200x100" style="left: 0px; position: absolute; top: 140px;" class="transition effect-panLeft delay-0 speed-1" />
+		<img src="http://placehold.it/200x100" style="left: 220px; position: absolute; top: 140px;" class="transition effect-panLeftNoFade delay-0 speed-1" />
+		<img src="http://placehold.it/200x100" style="left: 440px; position: absolute; top: 140px;" class="transition effect-panRight delay-0 speed-1" />
+-->
+	</div>
+</div>
+
+</body>
+</html>
